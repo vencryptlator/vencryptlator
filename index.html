@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VenCryptLator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/icono.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo"><img src="images/logo.png" alt="logo"></div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Calculadora</a></li>
+     
+      <li><a href="contacto.html">Contacto</a></li>
+        
+      </ul>
+    </nav>
+    <div class="banner">
+      <h2>VenCryptLator</h2>
+      <p>Calcula el valor de tus Criptomonedas en Bolívares</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="calculator">
+  <h2>Calculadora de Criptomonedas a Bolívares</h2>
+  <form>
+    
+    <label for="crypto-input">Elige una criptomoneda:</label>
+    <select id="crypto-input">
+      <option value="bitcoin" data-info="Bitcoin es la criptomoneda más conocida y valiosa del mundo. Fue creada en 2009 por una persona o grupo de personas bajo el seudónimo de Satoshi Nakamoto.">Bitcoin</option>
+      <option value="ethereum" data-info="Ethereum es una plataforma de software descentralizada que permite la creación de aplicaciones y contratos inteligentes (smart contracts). Fue creada en 2013 por el programador ruso-canadiense Vitalik Buterin.">Ethereum</option>
+      <option value="cardano" data-info="Cardano es una plataforma blockchain que utiliza un consenso de prueba de participación para validar transacciones en su red. Su criptomoneda nativa, llamada ADA, se utiliza como medio de pago y de gobierno en la plataforma. Es conocida por su enfoque en la seguridad y la escalabilidad.">Cardano</option>
+      <option value="solana" data-info="Solana es una plataforma de blockchain de alta velocidad y baja latencia que utiliza un algoritmo de consenso llamado Proof of History (PoH). Fue creada en 2017 por Anatoly Yakovenko.">Solana</option>
+      <option value="binancecoin" data-info="Binance Coin es una criptomoneda creada por el exchange de criptomonedas Binance. Se utiliza para pagar las comisiones de trading en la plataforma y para acceder a ciertos servicios exclusivos de la misma.">Binance Coin</option>
+    </select>
+    
+
+    <br><br>
+    <label for="amount-input">Ingresa la cantidad:</label>
+    <input type="number" id="amount-input">
+    <br><br>
+    <label for="usd-output">USD:</label>
+    <span id="usd-output"></span>
+    <br>
+    <label for="bolivar-output">Bs:</label>
+    <span id="bolivar-output"></span>
+    <h1>Tasa USD del dia (BCV): 25,17 BS  11/05/23</h1>
+  </form>
+  <div class="calculator-info"><div id="crypto-description"></div>
+</div>
+
+
+</section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 VenCryptLator | Todos los derechos reservados.  Seccion : I1DA</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
